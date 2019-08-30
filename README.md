@@ -21,7 +21,7 @@
 [dependabot]: https://api.dependabot.com/badges/status?host=github&repo=TrigenSoftware/hmr-filter-webpack-plugin
 [dependabot-url]: https://dependabot.com/
 
-Disable hot module replacement for certain chunks.
+Disable Hot Module Replacement for certain chunks.
 
 ## Install
 
@@ -41,6 +41,7 @@ const {
 // ...
 {
     plugins: [
+        // Disable HMR for `worker-loader` and `service-worker-loader`
         new HotModuleReplacementFilterPlugin((compilation) => {
 
             const {

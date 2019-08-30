@@ -1,7 +1,7 @@
 {
   "name": "hmr-filter-webpack-plugin",
   "version": "1.0.0",
-  "description": "Disable hot module replacement for certain chunks.",
+  "description": "Disable Hot Module Replacement for certain chunks.",
   "author": "dangreen",
   "license": "MIT",
   "repository": {
