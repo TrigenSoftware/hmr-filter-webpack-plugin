@@ -1,0 +1,9 @@
+{
+	"extends": "trigen/base",
+	"env": {
+		"node": true
+	},
+	"rules": {
+		"valid-jsdoc": "off"
+	}
+}

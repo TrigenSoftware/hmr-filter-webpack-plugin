@@ -1,0 +1,21 @@
+{
+  "generator-trigen-lib": {
+    "editPackage": true,
+    "pkg": {
+      "name": "hmr-filter-webpack-plugin",
+      "version": "1.0.0",
+      "description": "Disable hot module replacement for certain chunks.",
+      "repository": "https://github.com/TrigenSoftware/hmr-filter-webpack-plugin",
+      "author": "dangreen"
+    },
+    "type": "node",
+    "lang": "babel",
+    "rollup": true,
+    "jest": true,
+    "coverage": false,
+    "publishAsRoot": false,
+    "cleanPublish": true,
+    "checkSize": true,
+    "gitInit": true
+  }
+}
