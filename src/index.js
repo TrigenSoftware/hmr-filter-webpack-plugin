@@ -3,16 +3,16 @@ export class HotModuleReplacementFilterPlugin {
 	/**
 	 * HotModuleReplacementFilterPlugin constructor.
 	 * @param {(compilation) => boolean} filter - If returns `true`, then HMR will be disabled.
-	 * @param {string} hmlPluginId - Custom HMR plugin ID.
+	 * @param {string} hmrPluginId - Custom HMR plugin ID.
 	 */
-	constructor(filter, hmlPluginId = 'HotModuleReplacementPlugin') {
+	constructor(filter, hmrPluginId = 'HotModuleReplacementPlugin') {
 		this.filter = filter;
-		this.hmlPluginId = hmlPluginId;
+		this.hmrPluginId = hmrPluginId;
 	}
 
 	apply(compiler) {
 		compiler.hooks.compilation.tap(
-			this.hmlPluginId,
+			this.hmrPluginId,
 			(compilation) => {
 				if (this.filter(compilation)) {
 					compilation.hotUpdateChunkTemplate = false;
